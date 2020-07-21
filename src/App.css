@@ -1,38 +1,352 @@
-.App {
-  text-align: center;
+body {
+      background-color: hsl(217, 28%, 15%);
+      color: #fff;
+      text-align: center;
+      font-family: "Raleway";
+      font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+      font-family: "Open Sans";
+      font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* nav bar */
+nav {
+      width: 85%;
+      margin: 0 auto;
+}
+nav a {
+      color: #adabab;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 576px){
+      .ml-auto {
+            flex-direction: row;
+      }
+      .navbar-brand {
+            width: 30%;
+      }
+
+      .logo {
+            width: 80%;
+            
+      }
+      nav {
+            width: 95%;
+      }
+      .nav-item {
+            padding-right: 10px;
+      }
 }
 
-.App-link {
-  color: #61dafb;
+/* title */
+
+#title {
+      position: relative;
+      background: url(./images/bg-curvy-desktop.svg);
+      /* background: url("images/bg-curvy-desktop.svg"); */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      z-index: 1;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 576px) {
+      #title {
+            position: relative;
+            background: url(./images/bg-curvy-desktop.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            z-index: 1;
+      }
 }
+
+
+
+.mobile-curve {
+      display: none;
+}
+
+.title-text {
+      margin: 0 auto;
+      width: 60%;
+      position: relative;
+      /* margin-top: 28%; */
+      z-index: 2;
+}
+
+#title h1 {
+      padding-bottom: 3%;
+}
+#title p {
+      padding-bottom: 7%;
+      width: 60%;
+      margin: 0 auto;
+}
+
+.get-started-btn {
+      background-color: hsl(198, 60%, 50%);
+      border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	font-size:17px;
+	padding:16px 76px;
+	text-decoration:none;
+}
+
+
+@media (max-width: 786px){
+      nav {
+            width: 100%;
+            margin: 0 auto;
+      }
+      .title-text{
+            margin: 0 auto;
+            width: 90%;
+      }
+      .get-started-btn {
+            margin-bottom: 5%;
+      }
+      #title p{
+            width: 90%;
+      }
+      h1 {
+            font-size: 1.5rem;
+      }
+}
+
+/* features */
+
+#features {
+      background-color: hsl(218, 28%, 13%);
+      padding: 5% 15%;
+}
+
+#features h5 {
+      padding-top: 3%;
+}
+
+#features p {
+      padding: 0 5% 15%;
+}
+.fix {
+      padding-bottom: 10px;
+}
+
+/* team */
+
+#team {
+      background-color: hsl(218, 28%, 13%);
+      padding: 5%;
+}
+
+.team-text {
+      margin-top: 10%;
+      width: 60%;
+      float: left;
+      text-align: left;
+}
+
+@media (max-width:786px){
+      .team-text {
+            width: 90%;
+      }
+}
+
+#team a {
+      text-decoration: underline;
+      text-decoration-color: hsl(176, 68%, 64%);
+      color: hsl(176, 68%, 64%);
+}
+
+.arrow {
+      padding-left: 5px;
+}
+
+/* Testimonials */
+
+#testimonials {
+      background-color: hsl(218, 28%, 13%);
+      padding: 10% 5%;
+}
+
+.card-box {
+      background-color: hsl(219, 30%, 18%);
+      text-align: left;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 10% 2%;
+
+}
+
+@media (max-width: 990px){
+      .card {
+            background-color: hsl(218, 28%, 13%);
+      }
+      .card-box {
+            margin-bottom: 10%;
+      }
+}
+
+.profile-pic {
+      border-radius: 100%;
+      width: 50%;
+      margin-left: 20px;
+}   
+
+
+.quote {
+      margin-bottom: -15px;
+      text-align: left;
+}
+
+
+.list-2 {
+      list-style-type: none;
+}
+
+.table-div {
+      width: 20%;
+}
+
+.card-text {
+      width: 90%;
+      margin: 0 auto 20px auto;
+}
+
+
+/* sign in */
+
+#sign-in {
+      margin-top: -5%;
+      background-color: hsl(218, 28%, 13%);
+}
+
+#sign-in .card-box {
+      text-align: center;
+      padding: 3% 0;
+      border-radius: 15px;
+}
+
+.sign-in-card {
+      position: relative;
+      border: none;
+      background-color: hsl(219, 30%, 18%);
+      width: 70%;
+      margin: 5% auto -8% auto;
+}
+
+.form-box{
+      display: inline-flex;
+}
+
+
+.input-box {
+      padding: 15px 190px;
+      border-radius:28px;
+}
+
+#sign-in .get-started-btn {
+      font-size:14px;
+      /* padding:16px 2px; */
+      padding:16px 46px;
+}
+
+#sign-in p {
+      width: 80%;
+      margin: 3% auto;
+}
+
+
+@media (max-width:1250px) {
+
+      .email-box {
+            margin: auto;
+      }
+      .btn-box {
+            margin: auto;
+      }
+
+      #sign-in .input-box{
+            padding: 15px 50px;
+            border-radius:28px;
+      }
+}
+
+@media (max-width:995px) {
+      #sign-in .card-box {
+            box-shadow: none;
+      }
+}
+@media (max-width: 786px) {
+      .sign-in-card {
+            width: 90%;
+      }
+      .btn-box {
+            margin: 0 auto;
+      }
+}
+
+
+/* Footer */
+
+#footer {
+      padding-top: 10%;
+      background-color: hsl(216, 53%, 9%);
+      text-align: left;
+}
+
+.footer-icon {
+      margin-right: 10px;
+}
+
+.footer-box {
+      width: 80%;
+      margin: auto;
+}
+
+.footer-logo {
+      text-align: left;
+      padding-bottom: 30px;
+}
+
+.list {
+      list-style-type: none;
+      line-height: 2;
+}
+
+.location-icon {
+      display: inline-block;
+      text-align: left;
+}
+.lorem-ipsum {
+      width: 85%;
+      float: right;
+      text-align: left;
+}
+
+@media (max-width: 576px) {
+      #footer {
+            padding-top: 50%;
+            float: left;
+      }
+      .sign-in-card {
+            margin: 0 auto -35% auto;
+      }
+}
+
+/* attribution */
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+      background-color: hsl(216, 53%, 9%);
+      margin-bottom: 0;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
