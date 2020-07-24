@@ -5,9 +5,8 @@ import {motion} from 'framer-motion';
 function Title() {
       return (
             <motion.section 
-            initial={{y: '-100vh'}}
-            animate={{y: 0}}
-            transition={{duration: 0.5}}
+            animate={{scale: 1.1}}
+            transition={{duration: 2}}
             id="title">
             <div className="container-fluid">
               <img className="img-fluid" src={img} alt="" />
