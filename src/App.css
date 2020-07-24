@@ -122,7 +122,13 @@ nav a {
 
 #features {
       background-color: hsl(218, 28%, 13%);
-      padding: 5% 15%;
+      padding: 20% 15%;
+}
+
+@media (min-width: 768px) {
+      #features {
+            margin-top: -80px;
+      }
 }
 
 #features h5 {
