@@ -9,38 +9,38 @@ function Footer() {
     <div>
       <section id="footer">
         <div></div>
-        <div class="footer-box row">
-          <div class="footer-logo col-lg-12">
+        <div className="footer-box row">
+          <div className="footer-logo col-lg-12">
             <img src={logo} alt="" />
           </div>
-          <div class="col-lg-3 col-md-3 ">
-            <img class="location-icon" src={icon1} alt="" />
-            <span class="lorem-ipsum">
+          <div className="col-lg-3 col-md-3 ">
+            <img className="location-icon" src={icon1} alt="" />
+            <span className="lorem-ipsum">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </span>
           </div>
-          <div class="col-lg-3 col-md-3 ">
+          <div className="col-lg-3 col-md-3 ">
             <p>
-              <img class="footer-icon" src={icon2} alt="" />
+              <img className="footer-icon" src={icon2} alt="" />
               +1-543-123-4567
             </p>
 
             <p>
-              <img class="footer-icon" src={icon3} alt="" />
+              <img className="footer-icon" src={icon3} alt="" />
               example@fylo.com
             </p>
           </div>
-          <div class="col-lg-3 col-md-3 ">
-            <ul class="list">
+          <div className="col-lg-3 col-md-3 ">
+            <ul className="list">
               <li>About Us</li>
               <li>Jobs</li>
               <li>Press</li>
               <li>Blogs</li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-3">
-            <ul class="list">
+          <div className="col-lg-3 col-md-3">
+            <ul className="list">
               <li>Contact Us</li>
               <li>Terms</li>
               <li>Privacy</li>
@@ -49,7 +49,7 @@ function Footer() {
         </div>
       </section>
       <footer>
-        <p class="attribution">
+        <p className="attribution">
           Challenge by{" "}
           <a href="https://www.frontendmentor.io?ref=challenge">
             Frontend Mentor

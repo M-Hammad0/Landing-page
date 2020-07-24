@@ -1,24 +1,36 @@
-import React from 'react'
-import logo from '../images/logo.svg'
+import React from "react";
+import logo from "../images/logo.svg";
+import {motion} from 'framer-motion'
+
 function Header() {
-      return (
-            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
-    <a class="navbar-brand" href="/">
-      <img class="logo" src={logo} alt="logo" />
-    </a>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#features">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#team">Team</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#sign-in">sign in</a>
-      </li>
-    </ul>
-  </nav>
-      )
+  return (
+    <motion.nav
+    initial={{y: -100}}
+    animate={{y: 0}}
+    transition={{duration: 1}}
+     className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+      <a className="navbar-brand" href="/">
+        <img className="logo" src={logo} alt="logo" />
+      </a>
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <a className="nav-link" href="#features">
+            Features
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#team">
+            Team
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#sign-in">
+            sign in
+          </a>
+        </li>
+      </ul>
+    </motion.nav>
+  );
 }
 
-export default Header
+export default Header;
