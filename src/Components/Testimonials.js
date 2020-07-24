@@ -26,6 +26,7 @@ function Testimonials() {
               become a well-oiled collaboration machine.</p>
 
             <table>
+            <tbody>
               <tr>
                 <td className="table-div" rowSpan="2"><img className="profile-pic" src={p1} alt="" /></td>
                 <td>Satish Patel</td>
@@ -33,6 +34,7 @@ function Testimonials() {
               <tr>
                 <td>Founder & CEO, Huddle</td>
               </tr>
+              </tbody>
             </table>
 
           </div>
@@ -45,6 +47,7 @@ function Testimonials() {
               switch our team has
               become a well-oiled collaboration machine.</p>
             <table>
+            <tbody>
               <tr>
                 <td className="table-div" rowSpan="2"><img className="profile-pic" src={p2} alt="" /></td>
                 <td>Bruce McKenzie</td>
@@ -52,6 +55,7 @@ function Testimonials() {
               <tr>
                 <td>Founder & CEO, Huddle</td>
               </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -64,6 +68,7 @@ function Testimonials() {
               switch our team has
               become a well-oiled collaboration machine.</p>
             <table>
+            <tbody>
               <tr>
                 <td className="table-div" rowSpan="2"><img className="profile-pic" src={p3} alt="" /></td>
                 <td>Iva Boyd</td>
@@ -71,6 +76,7 @@ function Testimonials() {
               <tr>
                 <td>Founder & CEO, Huddle</td>
               </tr>
+              </tbody>
             </table>
           </div>
         </div>
