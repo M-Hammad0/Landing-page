@@ -5,7 +5,7 @@ import {motion} from 'framer-motion';
 function Title() {
       return (
             <motion.section 
-            initial={{y: '100vh'}}
+            initial={{y: '-100vh'}}
             animate={{y: 0}}
             transition={{duration: 0.5}}
             id="title">
